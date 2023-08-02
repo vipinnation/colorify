@@ -1,5 +1,5 @@
-class Logger {
-  static success(msg: any) {
+class Colorify {
+  static success(msg: string) {
     console.log("\x1b[32m", `[${new Date().toLocaleString()}] [SUCCESS]`, msg);
   }
 
@@ -16,4 +16,5 @@ class Logger {
   }
 }
 
+const Logger = Colorify;
 export default Logger;
