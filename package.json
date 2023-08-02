@@ -2,7 +2,7 @@
   "name": "@vipinnation/colorify",
   "version": "1.0.0",
   "description": "Package to make your console colorful",
-  "main": "index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "rm -rf lib && npx tsc",
