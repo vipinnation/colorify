@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "./lib",
+    "target": "ES5",
+    "strict": true
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "package-lock.json", "**/__test__/*"]
+}

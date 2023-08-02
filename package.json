@@ -1,0 +1,32 @@
+{
+  "name": "colorify",
+  "version": "1.0.0",
+  "description": "Package to make your console colorful",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+     "build":"rm -rf lib && npx tsc",
+     "prepare":"npm run build"
+  },
+  "keywords": [
+    "console.log",
+    "logs",
+    "log",
+    "colorful logs",
+    "console log"
+  ],
+  "author": "Vipin Meghwal <vipinnation@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipinnation/colorify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vipinnation/colorify/issues"
+  },
+  "homepage": "https://github.com/vipinnation/colorify#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "files": ["lib/**/*"]
+}
