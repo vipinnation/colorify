@@ -3,7 +3,7 @@ name: Publish to npm
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   publish:
@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build files
+      - name: Build Files
         run: npm run prepare
 
       - name: Publish to npm
