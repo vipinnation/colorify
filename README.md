@@ -27,3 +27,23 @@ You can install this package using npm:
 
 ```bash
 npm i @vipinnation/colorify
+``` 
+
+
+
+```
+const Logger = require('@vipinnation/colorify');
+
+// this will print in green color with current date time
+Logger.success("Print success message"); 
+
+// in red color
+Logger.error("Print error message");
+
+// in yellow color
+Logger.warn("Print warning message");
+
+```
+
+
+
