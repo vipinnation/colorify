@@ -26,7 +26,7 @@ npm i @vipinnation/colorify
 ## Usage
 
 ```javascript
-const Logger = require('@vipinnation/colorify');
+const Logger = require("@vipinnation/colorify");
 
 // Print success message in green with the current date and time
 Logger.success("Print success message");
@@ -38,4 +38,4 @@ Logger.error("Print error message");
 Logger.warn("Print warning message");
 ```
 
-Feel free to contribute, report issues, or suggest enhancements on [GitHub](https://github.com/your-username/your-package-name). Together, let's make console logging not just functional but also fun!
+Feel free to contribute, report issues, or suggest enhancements on [GitHub](https://github.com/vipinnation/colorify). Together, let's make console logging not just functional but also fun!
