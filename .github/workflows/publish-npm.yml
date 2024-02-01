@@ -12,23 +12,25 @@ jobs:
     steps:
       - name: Debug environment variables
         run: |
-          echo "NPM_PRINT_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}"
+          echo "NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}"
 
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'  # Adjust the Node.js version as needed
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Files
         run: npm run prepare
 
       - name: Publish to npm
-        run: npm publish
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
