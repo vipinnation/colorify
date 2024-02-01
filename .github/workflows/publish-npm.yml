@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Debug environment variables
         run: |
-          echo "NPM_TOKEN: $NPM_AUTH_TOKEN"
+          echo "NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}"
 
       - name: Checkout repository
         uses: actions/checkout@v2
